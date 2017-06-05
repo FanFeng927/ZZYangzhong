@@ -1,0 +1,1701 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>ROSSMANN STORE SALES COMPETITION KAGGLE</title></head><body><article class="markdown-body"><h1 id="rossmann-store-sales"><a name="user-content-rossmann-store-sales" href="#rossmann-store-sales" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Rossmann Store Sales</h1>
+<p>With this script you could have achieved the 13th place in the Rossmann Store Sales competition on Kaggle. No external data is used.</p>
+<p>If you would add Google Trends daily searches for &lsquo;Rossmann&rsquo;, State data and Weather data per State, you can get to the 7th place with just one model. But because that model would be useless for real world usage, that data is kept out of this model.</p>
+<p>This script uses about 8Gb of RAM and takes some hour to run.</p>
+<pre><code class="python">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import xgboost as xgb
+
+import pylab
+import csv
+import datetime
+import math
+import re
+import time
+import random
+import os
+
+from pandas.tseries.offsets import *
+from operator import *
+
+from sklearn.cross_validation import train_test_split
+
+%matplotlib inline
+
+# plt.style.use('ggplot') # Good looking plots
+
+np.set_printoptions(precision=4, threshold=10000, linewidth=100, edgeitems=999, suppress=True)
+
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+pd.set_option('display.width', 100)
+pd.set_option('expand_frame_repr', False)
+pd.set_option('precision', 6)
+
+start_time = time.time()
+</code></pre>
+
+<pre><code class="python"># Thanks to Chenglong Chen for providing this in the forum
+def ToWeight(y):
+    w = np.zeros(y.shape, dtype=float)
+    ind = y != 0
+    w[ind] = 1./(y[ind]**2)
+    return w
+
+def rmspe(yhat, y):
+    w = ToWeight(y)
+    rmspe = np.sqrt(np.mean( w * (y - yhat)**2 ))
+    return rmspe
+
+def rmspe_xg(yhat, y):
+    # y = y.values
+    y = y.get_label()
+    y = np.exp(y) - 1
+    yhat = np.exp(yhat) - 1
+    w = ToWeight(y)
+    rmspe = np.sqrt(np.mean(w * (y - yhat)**2))
+    return &quot;rmspe&quot;, rmspe
+</code></pre>
+
+<h2 id="setting-seed"><a name="user-content-setting-seed" href="#setting-seed" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Setting seed</h2>
+<pre><code class="python">seed = 42
+</code></pre>
+
+<h2 id="reading-sales-data"><a name="user-content-reading-sales-data" href="#reading-sales-data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reading sales data</h2>
+<pre><code class="python">nrows = None
+
+df_train = pd.read_csv('../data/train.csv', 
+                       nrows=nrows,
+                       parse_dates=['Date'],
+                       date_parser=(lambda dt: pd.to_datetime(dt, format='%Y-%m-%d')))
+
+nrows = nrows
+
+df_submit = pd.read_csv('../data/test.csv', 
+                        nrows=nrows,
+                        parse_dates=['Date'],
+                        date_parser=(lambda dt: pd.to_datetime(dt, format='%Y-%m-%d')))
+</code></pre>
+
+<pre><code>C:\Anaconda\lib\site-packages\IPython\core\interactiveshell.py:2902: DtypeWarning: Columns (7) have mixed types. Specify dtype option on import or set low_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)
+</code></pre>
+<pre><code class="python">### Setting a variable to easily distinguish train (1) from submit (0) set
+df_train['Set'] = 1
+df_submit['Set'] = 0
+</code></pre>
+
+<pre><code class="python">### Combine train and test set
+frames = [df_train, df_submit]
+df = pd.concat(frames)
+</code></pre>
+
+<pre><code class="python">df.info()
+</code></pre>
+
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 1058297 entries, 0 to 41087
+Data columns (total 11 columns):
+Customers        1017209 non-null float64
+Date             1058297 non-null datetime64[ns]
+DayOfWeek        1058297 non-null int64
+Id               41088 non-null float64
+Open             1058286 non-null float64
+Promo            1058297 non-null int64
+Sales            1017209 non-null float64
+SchoolHoliday    1058297 non-null int64
+Set              1058297 non-null int64
+StateHoliday     1058297 non-null object
+Store            1058297 non-null int64
+dtypes: datetime64[ns](1), float64(4), int64(5), object(1)
+memory usage: 96.9+ MB
+</code></pre>
+<pre><code class="python">features_x = ['Store', 'Date', 'DayOfWeek', 'Open', 'Promo', 'SchoolHoliday', 'StateHoliday']
+features_y = ['SalesLog']
+</code></pre>
+
+<pre><code class="python">### Remove rows where store is open, but no sales.
+df = df.loc[~((df['Open'] == 1) &amp; (df['Sales'] == 0))]
+</code></pre>
+
+<pre><code class="python">df.loc[df['Set'] == 1, 'SalesLog'] = np.log1p(df.loc[df['Set'] == 1]['Sales']) # = np.log(df['Sales'] + 1)
+</code></pre>
+
+<pre><code class="python">df['StateHoliday'] = df['StateHoliday'].astype('category').cat.codes
+</code></pre>
+
+<pre><code class="python">var_name = 'Date'
+
+df[var_name + 'Day'] = pd.Index(df[var_name]).day
+df[var_name + 'Week'] = pd.Index(df[var_name]).week
+df[var_name + 'Month'] = pd.Index(df[var_name]).month
+df[var_name + 'Year'] = pd.Index(df[var_name]).year
+df[var_name + 'DayOfYear'] = pd.Index(df[var_name]).dayofyear
+
+df[var_name + 'Day'] = df[var_name + 'Day'].fillna(0)
+df[var_name + 'Week'] = df[var_name + 'Week'].fillna(0)
+df[var_name + 'Month'] = df[var_name + 'Month'].fillna(0)
+df[var_name + 'Year'] = df[var_name + 'Year'].fillna(0)
+df[var_name + 'DayOfYear'] = df[var_name + 'DayOfYear'].fillna(0)
+
+features_x.remove(var_name)
+features_x.append(var_name + 'Day')
+features_x.append(var_name + 'Week')
+features_x.append(var_name + 'Month')
+features_x.append(var_name + 'Year')
+features_x.append(var_name + 'DayOfYear')
+</code></pre>
+
+<pre><code class="python">df['DateInt'] = df['Date'].astype(np.int64)
+</code></pre>
+
+<h2 id="reading-store-data"><a name="user-content-reading-store-data" href="#reading-store-data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reading store data</h2>
+<pre><code class="python">df_store = pd.read_csv('../data/store.csv', 
+                       nrows=nrows)
+</code></pre>
+
+<pre><code class="python">df_store.info()
+</code></pre>
+
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 1115 entries, 0 to 1114
+Data columns (total 10 columns):
+Store                        1115 non-null int64
+StoreType                    1115 non-null object
+Assortment                   1115 non-null object
+CompetitionDistance          1112 non-null float64
+CompetitionOpenSinceMonth    761 non-null float64
+CompetitionOpenSinceYear     761 non-null float64
+Promo2                       1115 non-null int64
+Promo2SinceWeek              571 non-null float64
+Promo2SinceYear              571 non-null float64
+PromoInterval                571 non-null object
+dtypes: float64(5), int64(2), object(3)
+memory usage: 95.8+ KB
+</code></pre>
+<pre><code class="python">### Convert Storetype and Assortment to numerical categories
+df_store['StoreType'] = df_store['StoreType'].astype('category').cat.codes
+df_store['Assortment'] = df_store['Assortment'].astype('category').cat.codes
+</code></pre>
+
+<pre><code class="python">### Convert competition open year and month to float
+def convertCompetitionOpen(df):
+    try:
+        date = '{}-{}'.format(int(df['CompetitionOpenSinceYear']), int(df['CompetitionOpenSinceMonth']))
+        return pd.to_datetime(date)
+    except:
+        return np.nan
+
+df_store['CompetitionOpenInt'] = df_store.apply(lambda df: convertCompetitionOpen(df), axis=1).astype(np.int64)
+</code></pre>
+
+<pre><code class="python">### Convert competition open year and month to float
+def convertPromo2(df):
+    try:
+        date = '{}{}1'.format(int(df['Promo2SinceYear']), int(df['Promo2SinceWeek']))
+        return pd.to_datetime(date, format='%Y%W%w')
+    except:
+        return np.nan
+
+df_store['Promo2SinceFloat'] = df_store.apply(lambda df: convertPromo2(df), axis=1).astype(np.int64)
+</code></pre>
+
+<pre><code class="python">s = df_store['PromoInterval'].str.split(',').apply(pd.Series, 1)
+s.columns = ['PromoInterval0', 'PromoInterval1', 'PromoInterval2', 'PromoInterval3']
+df_store = df_store.join(s)
+</code></pre>
+
+<pre><code class="python">def monthToNum(date):
+    return{
+            'Jan' : 1,
+            'Feb' : 2,
+            'Mar' : 3,
+            'Apr' : 4,
+            'May' : 5,
+            'Jun' : 6,
+            'Jul' : 7,
+            'Aug' : 8,
+            'Sept' : 9, 
+            'Oct' : 10,
+            'Nov' : 11,
+            'Dec' : 12
+    }[date]
+
+df_store['PromoInterval0'] = df_store['PromoInterval0'].map(lambda x: monthToNum(x) if str(x) != 'nan' else np.nan)
+df_store['PromoInterval1'] = df_store['PromoInterval1'].map(lambda x: monthToNum(x) if str(x) != 'nan' else np.nan)
+df_store['PromoInterval2'] = df_store['PromoInterval2'].map(lambda x: monthToNum(x) if str(x) != 'nan' else np.nan)
+df_store['PromoInterval3'] = df_store['PromoInterval3'].map(lambda x: monthToNum(x) if str(x) != 'nan' else np.nan)
+</code></pre>
+
+<pre><code class="python">del df_store['PromoInterval']
+</code></pre>
+
+<pre><code class="python">store_features = ['Store', 'StoreType', 'Assortment', 
+                  'CompetitionDistance', 'CompetitionOpenInt',
+                  'PromoInterval0']
+
+### Features not helping
+# PromoInterval1, PromoInterval2, PromoInterval3
+
+features_x = list(set(features_x + store_features))
+</code></pre>
+
+<pre><code class="python">df = pd.merge(df, df_store[store_features], how='left', on=['Store'])
+</code></pre>
+
+<pre><code class="python">### Convert every NAN to -1
+for feature in features_x:
+    df[feature] = df[feature].fillna(-1)
+</code></pre>
+
+<h2 id="manually-check-and-correct-some-strange-data-in-stores"><a name="user-content-manually-check-and-correct-some-strange-data-in-stores" href="#manually-check-and-correct-some-strange-data-in-stores" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Manually Check and Correct some Strange Data in Stores</h2>
+<pre><code class="python">list_stores_to_check = [105,163,172,364,378,523,589,663,676,681,700,708,730,764,837,845,861,882,969,986]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, '-')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_32_0.png" /></p>
+<pre><code class="python">list_stores_to_check = [192,263,500,797,815,825]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, '-')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_33_0.png" /></p>
+<pre><code class="python">list_stores_to_check = [274,524,709,1029]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, '.')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_34_0.png" /></p>
+<pre><code class="python">list_stores_to_check = [274,524,709,1029]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, '-')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_35_0.png" /></p>
+<pre><code class="python">list_stores_to_check = [299,453,530,732,931]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, '-')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_36_0.png" /></p>
+<pre><code class="python">store_dates_to_remove = {   105:1.368e18, 163:1.368e18,
+                            172:1.366e18, 364:1.37e18,
+                            378:1.39e18, 523:1.39e18,
+                            589:1.37e18, 663:1.39e18,
+                            676:1.366e18, 681:1.37e18,
+                            700:1.373e18, 708:1.368e18,
+                            709:1.423e18, 730:1.39e18,
+                            764:1.368e18, 837:1.396e18,
+                            845:1.368e18, 861:1.368e18,
+                            882:1.368e18, 969:1.366e18,
+                            986:1.368e18, 192:1.421e18,
+                            263:1.421e18, 500:1.421e18,
+                            797:1.421e18, 815:1.421e18,
+                            825:1.421e18}
+
+for key,value in store_dates_to_remove.iteritems():
+    df.loc[(df['Store'] == key) &amp; (df['DateInt'] &lt; value), 'Delete'] = True
+</code></pre>
+
+<pre><code class="python">list_stores_to_check = [105,163,172,364,378,523,589,663,676,681,700,708,730,764,837,845,861,882,969,986]
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,len(list_stores_to_check)*5]
+
+j = 1
+for i in list_stores_to_check:
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Delete'] == True)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Delete'] == True)]['Sales']
+
+    X2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Delete'] != True)]
+    y2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Delete'] != True)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(len(list_stores_to_check),1,j)
+    plt.plot(X1['DateInt'], y1, 'r-')
+    plt.plot(X2['DateInt'], y2, '-')
+    plt.minorticks_on()
+    plt.grid(True, which='both')
+    plt.title(i)
+    j += 1
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_38_0.png" /></p>
+<pre><code class="python">### Delete the data where sales in the first period is much different from the rest
+df = df.loc[df['Delete'] != True]
+</code></pre>
+
+<h2 id="remove-outliers-with-deviation-3"><a name="user-content-remove-outliers-with-deviation-3" href="#remove-outliers-with-deviation-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Remove Outliers with Deviation &gt;= 3</h2>
+<pre><code class="python">def mad_based_outlier(points, thresh=3.5):
+    if len(points.shape) == 1:
+        points = points[:,None]
+    median = np.median(points, axis=0)
+    diff = np.sum((points - median)**2, axis=-1)
+    diff = np.sqrt(diff)
+    med_abs_deviation = np.median(diff)
+
+    modified_z_score = 0.6745 * diff / med_abs_deviation
+
+    return modified_z_score &gt; thresh
+</code></pre>
+
+<pre><code class="python">for i in df['Store'].unique():
+    df.loc[(df['Set'] == 1) &amp; (df['Store'] == i) &amp; (df['Open'] == 1), 'Outlier'] = \
+        mad_based_outlier(df.loc[(df['Set'] == 1) &amp; (df['Store'] == i) &amp; (df['Open'] == 1)]['Sales'], 3)
+</code></pre>
+
+<pre><code class="python">no_stores_to_check = 10
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,no_stores_to_check*5]
+
+for i in range(1,no_stores_to_check+1):
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)]['Sales']
+
+    # Outliers
+    X2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True)]
+    y2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(10,5,i)
+    plt.plot(X1['Date'], y1, '-')
+    plt.plot(X2['Date'], y2, 'r.')
+    plt.title(i)
+    plt.axis('off')
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_43_0.png" /></p>
+<h2 id="split-data-in-training-and-test-for-filling-in-the-outliers"><a name="user-content-split-data-in-training-and-test-for-filling-in-the-outliers" href="#split-data-in-training-and-test-for-filling-in-the-outliers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Split Data in Training and Test for Filling in the Outliers</h2>
+<pre><code class="python">X_train, X_test, y_train, y_test = train_test_split(df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)][features_x],
+                                                    df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)][features_y],
+                                                    test_size=0.1, random_state=seed)
+</code></pre>
+
+<pre><code class="python">dtrain = xgb.DMatrix(X_train, y_train)
+dtest = xgb.DMatrix(X_test, y_test)
+</code></pre>
+
+<pre><code class="python">num_round = 20000
+evallist = [(dtrain, 'train'), (dtest, 'test')]
+</code></pre>
+
+<pre><code class="python">param = {'bst:max_depth':12,
+         'bst:eta':0.01,
+         'subsample':0.8,
+         'colsample_bytree':0.7,
+         'silent':1,
+         'objective':'reg:linear',
+         'nthread':6,
+         'seed':seed}
+
+plst = param.items()
+
+bst = xgb.train(plst, dtrain, num_round, evallist, feval=rmspe_xg, verbose_eval=250, early_stopping_rounds=250)
+</code></pre>
+
+<pre><code>Will train until test error hasn't decreased in 250 rounds.
+[0] train-rmspe:0.999863    test-rmspe:0.999863
+[250]   train-rmspe:0.491216    test-rmspe:0.487971
+[500]   train-rmspe:0.198972    test-rmspe:0.188309
+[750]   train-rmspe:0.166821    test-rmspe:0.156818
+[1000]  train-rmspe:0.137129    test-rmspe:0.132996
+[1250]  train-rmspe:0.122311    test-rmspe:0.121035
+[1500]  train-rmspe:0.109952    test-rmspe:0.112465
+[1750]  train-rmspe:0.100481    test-rmspe:0.106788
+[2000]  train-rmspe:0.093883    test-rmspe:0.102796
+[2250]  train-rmspe:0.088570    test-rmspe:0.100460
+[2500]  train-rmspe:0.083871    test-rmspe:0.098587
+[2750]  train-rmspe:0.080263    test-rmspe:0.097114
+[3000]  train-rmspe:0.077273    test-rmspe:0.095896
+[3250]  train-rmspe:0.074326    test-rmspe:0.094886
+[3500]  train-rmspe:0.071833    test-rmspe:0.094089
+[3750]  train-rmspe:0.069701    test-rmspe:0.093385
+[4000]  train-rmspe:0.067834    test-rmspe:0.092811
+[4250]  train-rmspe:0.066103    test-rmspe:0.092347
+[4500]  train-rmspe:0.064509    test-rmspe:0.091941
+[4750]  train-rmspe:0.062960    test-rmspe:0.091569
+[5000]  train-rmspe:0.061581    test-rmspe:0.091271
+[5250]  train-rmspe:0.060224    test-rmspe:0.091016
+[5500]  train-rmspe:0.058971    test-rmspe:0.090792
+[5750]  train-rmspe:0.057782    test-rmspe:0.090605
+[6000]  train-rmspe:0.056656    test-rmspe:0.090459
+[6250]  train-rmspe:0.055568    test-rmspe:0.090350
+[6500]  train-rmspe:0.054547    test-rmspe:0.090252
+[6750]  train-rmspe:0.053527    test-rmspe:0.090143
+[7000]  train-rmspe:0.052577    test-rmspe:0.090067
+[7250]  train-rmspe:0.051698    test-rmspe:0.090008
+[7500]  train-rmspe:0.050825    test-rmspe:0.089956
+[7750]  train-rmspe:0.050012    test-rmspe:0.089897
+[8000]  train-rmspe:0.049207    test-rmspe:0.089844
+[8250]  train-rmspe:0.048413    test-rmspe:0.089800
+[8500]  train-rmspe:0.047679    test-rmspe:0.089768
+[8750]  train-rmspe:0.046973    test-rmspe:0.089742
+[9000]  train-rmspe:0.046274    test-rmspe:0.089741
+Stopping. Best iteration:
+[8751]  train-rmspe:0.046970    test-rmspe:0.089741
+</code></pre>
+<pre><code class="python">dpred = xgb.DMatrix(df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True)][features_x])
+</code></pre>
+
+<pre><code class="python">ypred_bst = bst.predict(dpred)
+</code></pre>
+
+<pre><code class="python">df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True), 'SalesLog'] = ypred_bst
+df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True), 'Sales'] = np.exp(ypred_bst) - 1
+</code></pre>
+
+<pre><code class="python">### You see the result being lower than before, but most of them are still pretty high
+no_stores_to_check = 10
+
+plt.rcParams[&quot;figure.figsize&quot;] = [20,no_stores_to_check*5]
+
+for i in range(1,no_stores_to_check+1):
+    stor = i
+
+    # Normal sales
+    X1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)]
+    y1 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == False)]['Sales']
+
+    # Outliers
+    X2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True)]
+    y2 = df.loc[(df['Set'] == 1) &amp; (df['Store'] == stor) &amp; (df['Open'] == 1) &amp; (df['Outlier'] == True)]['Sales']
+
+    Xt = df.loc[(df['Store'] == stor)]
+
+    plt.subplot(10,5,i)
+    plt.plot(X1['Date'], y1, '-')
+    plt.plot(X2['Date'], y2, 'r.')
+    plt.title(i)
+    plt.axis('off')
+</code></pre>
+
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_52_0.png" /></p>
+<h2 id="generating-some-extra-store-data-from-sales"><a name="user-content-generating-some-extra-store-data-from-sales" href="#generating-some-extra-store-data-from-sales" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Generating some extra store data from sales</h2>
+<pre><code class="python">### Get total sales, customers and open days per store
+store_data_sales = df.groupby([df['Store']])['Sales'].sum()
+store_data_customers = df.groupby([df['Store']])['Customers'].sum()
+store_data_open = df.groupby([df['Store']])['Open'].count()
+</code></pre>
+
+<pre><code class="python">### Calculate sales per day, customers per day and sales per customers per day
+store_data_sales_per_day = store_data_sales / store_data_open
+store_data_customers_per_day = store_data_customers / store_data_open
+store_data_sales_per_customer_per_day = store_data_sales_per_day / store_data_customers_per_day
+</code></pre>
+
+<pre><code class="python">df_store = pd.merge(df_store, store_data_sales_per_day.reset_index(name='SalesPerDay'), how='left', on=['Store'])
+df_store = pd.merge(df_store, store_data_customers_per_day.reset_index(name='CustomersPerDay'), how='left', on=['Store'])
+df_store = pd.merge(df_store, store_data_sales_per_customer_per_day.reset_index(name='SalesPerCustomersPerDay'), how='left', on=['Store'])
+</code></pre>
+
+<pre><code class="python">store_features = ['Store', 'SalesPerDay', 'CustomersPerDay', 'SalesPerCustomersPerDay']
+
+features_x = list(set(features_x + store_features))
+</code></pre>
+
+<pre><code class="python">df = pd.merge(df, df_store[store_features], how='left', on=['Store'])
+</code></pre>
+
+<h2 id="random-sampling"><a name="user-content-random-sampling" href="#random-sampling" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Random Sampling</h2>
+<pre><code class="python">X_train, X_test, y_train, y_test = train_test_split(df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1)][features_x],
+                                                    df.loc[(df['Set'] == 1) &amp; (df['Open'] == 1)][features_y],
+                                                    test_size=0.1, random_state=seed)
+</code></pre>
+
+<pre><code class="python">dtrain = xgb.DMatrix(X_train, y_train)
+dtest = xgb.DMatrix(X_test, y_test)
+</code></pre>
+
+<pre><code class="python">num_round = 20000
+evallist = [(dtrain, 'train'), (dtest, 'test')]
+</code></pre>
+
+<pre><code class="python">param = {'bst:max_depth':12,
+         'bst:eta':0.0095,
+         'subsample':0.8,
+         'colsample_bytree':0.7,
+         'silent':1, 
+         'objective':'reg:linear',
+         'nthread':6,
+         'seed':seed}
+
+plst = param.items()
+
+bst1 = xgb.train(plst, dtrain, num_round, evallist, feval=rmspe_xg, verbose_eval=250, early_stopping_rounds=250)
+</code></pre>
+
+<pre><code>Will train until test error hasn't decreased in 250 rounds.
+[0] train-rmspe:0.999866    test-rmspe:0.999865
+[250]   train-rmspe:0.531137    test-rmspe:0.529227
+[500]   train-rmspe:0.137918    test-rmspe:0.131062
+[750]   train-rmspe:0.110675    test-rmspe:0.111607
+[1000]  train-rmspe:0.100810    test-rmspe:0.106202
+[1250]  train-rmspe:0.092724    test-rmspe:0.102566
+[1500]  train-rmspe:0.087041    test-rmspe:0.099832
+[1750]  train-rmspe:0.082683    test-rmspe:0.097939
+[2000]  train-rmspe:0.078698    test-rmspe:0.096432
+[2250]  train-rmspe:0.075622    test-rmspe:0.095216
+[2500]  train-rmspe:0.072704    test-rmspe:0.094271
+[2750]  train-rmspe:0.070362    test-rmspe:0.093525
+[3000]  train-rmspe:0.068244    test-rmspe:0.092888
+[3250]  train-rmspe:0.066329    test-rmspe:0.092319
+[3500]  train-rmspe:0.064502    test-rmspe:0.091857
+[3750]  train-rmspe:0.062939    test-rmspe:0.091523
+[4000]  train-rmspe:0.061489    test-rmspe:0.091201
+[4250]  train-rmspe:0.060084    test-rmspe:0.090915
+[4500]  train-rmspe:0.058776    test-rmspe:0.090721
+[4750]  train-rmspe:0.057532    test-rmspe:0.090546
+[5000]  train-rmspe:0.056319    test-rmspe:0.090379
+[5250]  train-rmspe:0.055231    test-rmspe:0.090255
+[5500]  train-rmspe:0.054148    test-rmspe:0.090183
+[5750]  train-rmspe:0.053105    test-rmspe:0.090085
+[6000]  train-rmspe:0.052128    test-rmspe:0.090017
+[6250]  train-rmspe:0.051182    test-rmspe:0.089965
+[6500]  train-rmspe:0.050276    test-rmspe:0.089904
+[6750]  train-rmspe:0.049418    test-rmspe:0.089879
+[7000]  train-rmspe:0.048590    test-rmspe:0.089835
+[7250]  train-rmspe:0.047803    test-rmspe:0.089802
+[7500]  train-rmspe:0.047017    test-rmspe:0.089793
+[7750]  train-rmspe:0.046294    test-rmspe:0.089776
+[8000]  train-rmspe:0.045572    test-rmspe:0.089759
+[8250]  train-rmspe:0.044861    test-rmspe:0.089749
+[8500]  train-rmspe:0.044187    test-rmspe:0.089727
+[8750]  train-rmspe:0.043539    test-rmspe:0.089736
+Stopping. Best iteration:
+[8575]  train-rmspe:0.043983    test-rmspe:0.089723
+</code></pre>
+<pre><code class="python">xgb.plot_importance(bst1)
+</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x2fcca668&gt;
+</code></pre>
+<p><img alt="png" src="///C://Users/lenovo/Desktop/ZZYangzhong/Blogs/ROSSMANN%2BSTORE%2BSALES%2BCOMPETITION%2BKAGGLE/output_64_1.png" /></p>
+<h2 id="export-data"><a name="user-content-export-data" href="#export-data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Export data</h2>
+<pre><code class="python">X_submit = df.loc[df['Set'] == 0]
+</code></pre>
+
+<pre><code class="python">dsubmit = xgb.DMatrix(X_submit[features_x])
+</code></pre>
+
+<pre><code class="python">ypred_bst = bst1.predict(dsubmit)
+
+df_ypred = X_submit['Id'].reset_index()
+del df_ypred['index']
+df_ypred['Id'] = df_ypred['Id'].astype('int')
+
+# Scale back the sales a bit
+df_ypred['Sales'] = (np.exp(ypred_bst) - 1) * 0.985
+
+df_ypred.sort_values('Id', inplace=True)
+df_ypred[['Id', 'Sales']].to_csv('rossmann_best_no_ext_data_scaled.csv', index=False)
+</code></pre></article></body></html>
